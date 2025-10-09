@@ -6,7 +6,7 @@
 
 int main(){
     int a,min;
-    printf("请输入%d个数：",N);
+    printf("请输入%d个数:",N);
     for(int i=0;i<N;i++){
         scanf("%d",&a);
         if (i==0) min=a;
