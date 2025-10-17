@@ -17,37 +17,6 @@
 
 double bonus = 0;
 
-double sch(double profit) {
-    int level = profit / 100000;
-    switch(level) {
-        case 10:
-        case 9:
-        case 8:
-        case 7:
-        case 6:
-            bonus += (profit - 600000) * 0.015;
-            profit = 600000;
-        case 5:
-        case 4:
-            bonus += (profit - 400000) * 0.03;
-            profit = 400000;
-        case 3:
-        case 2:
-            bonus += (profit - 200000) * 0.05;
-            profit = 200000;
-        case 1:
-            bonus += (profit - 100000) * 0.075;
-            profit = 100000;
-        case 0:
-            bonus += profit * 0.10;
-            break;
-        default:
-            bonus += (profit - 1000000) * 0.01 + 39500;
-            break;
-    }
-    return bonus;
-}
-
 double ife(double profit) {
     if (profit > 1000000) {
         bonus += (profit - 1000000) * 0.01;
@@ -77,7 +46,6 @@ int main() {
     double profit;
     printf("请输入利润:");
     scanf("%lf", &profit);
-    // bonus = sch(profit);
     bonus = ife(profit);
     printf("奖金为:RMB%.2f\n", bonus);
     return 0;
