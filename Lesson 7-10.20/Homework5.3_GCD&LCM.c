@@ -7,7 +7,7 @@
 */
 #include <stdio.h>
 
-int gcd(int u,int v){
+int gcd(int u, int v){
     int r;
     while(v!=0){
         r=u%v;
@@ -23,6 +23,7 @@ int lcm(int u,int v){
 
 int main(){
     int u,v;
+    printf("请输入两个非负整数：");
     scanf("%d%d",&u,&v);
     printf("gcd=%d\n",gcd(u,v));
     printf("lcm=%d\n",lcm(u,v));
