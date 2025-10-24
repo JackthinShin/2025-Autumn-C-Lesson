@@ -5,7 +5,7 @@
 #define E 1e-7
 
 double f(double x){
-    return 2*x*x*x-4*x*x+3*x-6;
+    return 2*x*x*x-4*x*x+3*x-2;
 }
 
 double f1(double x){
@@ -24,6 +24,6 @@ int main(){
         a=b;
         b=a-f(a)/f1(a);
     }
-    printf("%lf\n",b);
+    printf("root=%lf\n",b);
     return 0;
 }

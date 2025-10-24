@@ -5,11 +5,7 @@
 #define E 1e-7
 
 double f(double x){
-    return 2*x*x*x-4*x*x+3*x-6;
-}
-
-double f1(double x){
-    return 6*x*x-8*x+3;
+    return 2*x*x*x-4*x*x+3*x-2;
 }
 
 int main(){
@@ -19,6 +15,6 @@ int main(){
         if(f(c)*f(b)>0) b=c;
         else a=c;
     }
-    printf("%lf\n",c);
+    printf("root=%lf\n",c);
     return 0;
 }

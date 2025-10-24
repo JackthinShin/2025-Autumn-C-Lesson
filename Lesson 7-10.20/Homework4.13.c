@@ -14,7 +14,7 @@ int isLeap(int i){
 }
 
 int main(){
-    int sy=2000,ty=2100;
+    int sy=1900,ty=1981;
     int n=0;  //已输出的闰年的个数
     for(int i=sy;i<=ty;i++){
         if(isLeap(i)){

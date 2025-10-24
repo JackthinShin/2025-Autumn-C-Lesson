@@ -18,7 +18,7 @@ int main(){
     double x,y;
     int h;
     printf("请输入坐标：");
-    scanf("%lf,%lf",&x,&y);
+    scanf("%lf%lf",&x,&y);
     printf("塔高：");
     scanf("%d",&h);
     x=fabs(x);
