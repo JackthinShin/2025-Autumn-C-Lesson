@@ -20,7 +20,7 @@ int isPerfect(int n){
 }
 
 int main(){
-    clock_t start,end; 
+    clock_t start,end;
     start=clock();
     int i,j,n=0;
     printf("%d(含)以内的完数有:\n",M);
