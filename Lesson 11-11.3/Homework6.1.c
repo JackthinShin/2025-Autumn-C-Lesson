@@ -4,7 +4,7 @@
 //1(含)以内的素数有0个
 #include <stdio.h>
 #include <time.h>
-#define N 100000000
+#define N 1
 
 int a[N+1];
 
