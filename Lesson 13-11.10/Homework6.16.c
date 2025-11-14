@@ -27,6 +27,7 @@ void insertSort(char arr[][10], int n) {
 int main() {
     char nation[][10] = {"CHINA", "USA", "RUSSIA", "UK", "FRANCE"};
     insertSort(nation, 5);
+    printf("排序次序为:\n");
     for (int i = 0; i < 5; i++) {
         printf("%s\n", nation[i]);
     }

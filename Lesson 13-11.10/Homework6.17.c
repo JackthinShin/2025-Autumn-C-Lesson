@@ -7,7 +7,7 @@
 #include <string.h>
 
 char str[81], longest[81];
-int start = 0, length = 0; 
+int start = 0, length = 0, beststart = 0; 
 
 void f(char str[]) {
     char ch, pre = ' ';
@@ -17,8 +17,10 @@ void f(char str[]) {
         }
         if ((ch == ' ' || str[i+1] == '\0') && pre != ' ') {
             int wordLength = (ch == ' ') ? (i - start) : (i - start + 1);
-            if (wordLength > length)
+            if (wordLength > length) {
                 length = wordLength;
+                beststart = start;
+            }
         }
         pre = ch;
     }
@@ -26,8 +28,8 @@ void f(char str[]) {
 int main() {
     gets(str);
     f(str);
-    for(int i=start;i<start+length;i++)
-        longest[i-start]=str[i];
+    for(int i=beststart;i<beststart+length;i++)
+        longest[i-beststart]=str[i];
     printf("最长单词为:%s,长度为:%d\n", longest, length);
     return 0;
 }
