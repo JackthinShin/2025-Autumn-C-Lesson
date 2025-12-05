@@ -20,6 +20,7 @@ void ring(int a[],int people,int spacing) {
         prev=now;
         now=a[now];
     }
+    if(out%10!=0) printf("\n");
 }
 
 int main() {

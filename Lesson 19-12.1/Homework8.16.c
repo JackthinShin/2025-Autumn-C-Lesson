@@ -32,7 +32,7 @@ void f(char *s, int *a, int *count) {
 
 int main() {
     char str[] = "A123x456 17960? 302tab5876";
-    printf("%s\n", str);
+    printf("原始字符串为:%s\n", str);
     int a[100], count = 0;
     f(str, a, &count);
     printf("共%d个整数\n", count);
