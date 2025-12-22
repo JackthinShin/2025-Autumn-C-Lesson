@@ -1,0 +1,142 @@
+*****Create list!*****
+Please input records：(0,0 for exit)
+23005,78
+23007,90
+23003,85
+0,0
+
+Now,These 3 records are:
+23003  85.0
+23005  78.0
+23007  90.0
+
+1. INSERT       2. DELETE       0. EXIT
+Please Choose: 1
+Please input num and score: 23002,95
+Inserted：23002
+
+Now,These 4 records are:
+23002  95.0
+23003  85.0
+23005  78.0
+23007  90.0
+
+1. INSERT       2. DELETE       0. EXIT
+Please Choose: 1
+Please input num and score: 23006,83
+Inserted：23006
+
+Now,These 5 records are:
+23002  95.0
+23003  85.0
+23005  78.0
+23006  83.0
+23007  90.0
+
+1. INSERT       2. DELETE       0. EXIT
+Please Choose: 1
+Please input num and score: 23011,60
+Inserted：23011
+
+Now,These 6 records are:
+23002  95.0
+23003  85.0
+23005  78.0
+23006  83.0
+23007  90.0
+23011  60.0
+
+1. INSERT       2. DELETE       0. EXIT
+Please Choose: 2
+Please input num: 23002
+Deleted：23002
+
+Now,These 5 records are:
+23003  85.0
+23005  78.0
+23006  83.0
+23007  90.0
+23011  60.0
+
+1. INSERT       2. DELETE       0. EXIT
+Please Choose: 2
+Please input num: 23006
+Deleted：23006
+
+Now,These 4 records are:
+23003  85.0
+23005  78.0
+23007  90.0
+23011  60.0
+
+1. INSERT       2. DELETE       0. EXIT
+Please Choose: 2
+Please input num: 23011
+Deleted：23011
+
+Now,These 3 records are:
+23003  85.0
+23005  78.0
+23007  90.0
+
+1. INSERT       2. DELETE       0. EXIT
+Please Choose: 2
+Please input num: 23006
+23006 not been found!
+
+Now,These 3 records are:
+23003  85.0
+23005  78.0
+23007  90.0
+
+1. INSERT       2. DELETE       0. EXIT
+Please Choose: 2
+Please input num: 23003
+Deleted：23003
+
+Now,These 2 records are:
+23005  78.0
+23007  90.0
+
+1. INSERT       2. DELETE       0. EXIT
+Please Choose: 2
+Please input num: 23005
+Deleted：23005
+
+Now,These 1 records are:
+23007  90.0
+
+1. INSERT       2. DELETE       0. EXIT
+Please Choose: 2
+Please input num: 23007
+Deleted：23007
+
+Sorry! No records now!
+
+1. INSERT       2. DELETE       0. EXIT
+Please Choose: 1
+Please input num and score: 23005,85
+Inserted：23005
+
+Now,These 1 records are:
+23005  85.0
+
+1. INSERT       2. DELETE       0. EXIT
+Please Choose: 2
+Please input num: 23005
+Deleted：23005
+
+Sorry! No records now!
+
+1. INSERT       2. DELETE       0. EXIT
+Please Choose: 2
+Please input num: 23007
+List is null!
+
+Sorry! No records now!
+
+1. INSERT       2. DELETE       0. EXIT
+Please Choose: 0
+
+Process returned 0 (0x0)   execution time : 354.388 s
+Press any key to continue.
