@@ -56,15 +56,12 @@ static struct student *del(struct student *head, long num) {
     return head;
 }
 
-static struct student *create(void) {
+static struct student *create() {
     struct student *head = NULL;
-    long num; float score;
+    long num; 
+    float score;
     while (1) {
-        if (scanf("%ld,%f", &num, &score) != 2) {
-            int c;
-            while ((c = getchar()) != '\n' && c != EOF) {}
-            break;
-        }
+        scanf("%ld,%f", &num, &score);
         if (num == 0 && score == 0.0f) {
             break;
         }
