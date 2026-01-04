@@ -34,7 +34,9 @@ int main(void)
     const char *path_history = "/Users/jackthinshin/Desktop/2025 Autumn C Lesson/Lesson 27-12.29/diary/history.txt";
     const char *path_backup  = "/Users/jackthinshin/Desktop/2025 Autumn C Lesson/Lesson 27-12.29/backup/backup.dat";
     remove(path_backup);
+    printf("已删除 backup.dat。\n");
     copy_file(path_history, path_backup);
+    printf("已用 history.txt 内容重建 backup.dat。\n");
     FILE *fp_history_append = fopen(path_history, "a");
     if (!fp_history_append) {
         perror("无法以追加方式打开 history.txt");
@@ -51,6 +53,7 @@ int main(void)
     while ((ch = fgetc(fp_today)) != EOF) {
         fputc(ch, fp_history_append);
     }
+    printf("today.txt 已添加到 history.txt 末尾。\n");
     fclose(fp_today);
     fclose(fp_history_append);
     return 0;
